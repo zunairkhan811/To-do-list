@@ -192,7 +192,7 @@ I would like to give credit to Microverse for inspiring me enough to make this p
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./license.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
