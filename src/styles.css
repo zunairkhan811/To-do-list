@@ -20,7 +20,7 @@ html{
 }
 #main-box{
     width: 480px;
-    transform: translate(60%, 60%);
+    transform: translate(90%, 60%);
     border: 2px solid brown;
 }
 #list-heading{
