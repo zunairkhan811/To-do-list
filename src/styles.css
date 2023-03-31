@@ -20,9 +20,16 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
+#noteheading{
+  width: 480px;
+  margin: auto;
+  border: 2px solid brown;
+}
+
 #main-box {
   width: 480px;
-  transform: translate(90%, 60%);
+  margin: auto;
+  margin-top: 20px;
   border: 2px solid brown;
 }
 
@@ -57,7 +64,7 @@ html {
   font-size: 20px;
 }
 
-.add-task-icon i {
+.add-task-icon {
   font-size: 14px;
   padding: 5px;
   margin-top: 6px;
@@ -80,12 +87,23 @@ html {
 
 .tasks-text {
   width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 9px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
+  color: black;
+  height: 22px;
+  font-weight: 400;
+  font-size: 17px;
 }
 
-.tasks-icon i {
+#tasks-icon{
   display: flex;
-  justify-content: flex-end;
   cursor: move;
 }
 
@@ -103,5 +121,11 @@ html {
   border: none;
   background: none;
   padding: 4px;
+  cursor: pointer;
+}
+
+#remove{
+  display: none;
+  color: red;
   cursor: pointer;
 }
