@@ -92,3 +92,24 @@ taskdiv.forEach((el,i)=>{
     })
 })   
 }
+
+function savelocal(text,i){
+    // console.log(text);
+    // console.log(i)
+    let newArray = JSON.parse(localStorage.getItem('Tasks'))
+    newArray[i].description=text;
+    // console.log(newArray)
+    localStorage.setItem('Tasks', JSON.stringify(newArray));
+    
+    }
+    function removetask(removeiconId,i){
+        removeiconId.forEach((el,i)=>{
+            el.addEventListener('click',()=>{
+            let newArray = JSON.parse(localStorage.getItem('Tasks'))
+            newArray.splice(i,1);
+            console.log(newArray) 
+            localStorage.setItem('Tasks', JSON.stringify(newArray)); 
+            location.reload(); 
+            })
+        })
+    }
