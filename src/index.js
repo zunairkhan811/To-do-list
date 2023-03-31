@@ -62,3 +62,33 @@ function displayList(){
  }
     
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    displayList();
+});
+
+function editTask(){
+const removeiconId = document.querySelectorAll('#remove');
+const doticon = document.querySelectorAll('#tasks-icon')
+const textareaInput = document.querySelectorAll('.tasks-text');
+const taskdiv = document.querySelectorAll('.tasks');
+// console.log(taskdiv)
+// console.log(textareaInput)
+// console.log(taskList)
+
+taskdiv.forEach((el,i)=>{
+    el.addEventListener('dblclick',(e)=>{
+        e.target.disabled = false;
+        doticon[i].style.display = 'none'
+        removeiconId[i].style.display = 'block'
+        removetask(removeiconId,i);
+        el.addEventListener('dblclick',(e)=>{
+            e.target.disabled = true;
+            doticon[i].style.display = 'block'
+            removeiconId[i].style.display = 'none'
+            editTask();
+            savelocal(textareaInput[i].value,i)
+        })
+    })
+})   
+}
