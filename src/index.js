@@ -9,40 +9,35 @@ if (objStr != null) {
   userArray = JSON.parse(objStr);
 }
 
-function removetask(removeiconId) {
-  removeiconId.forEach((el, i) => {
-    el.addEventListener('click', () => {
-      const newArray = JSON.parse(localStorage.getItem('Tasks'));
-      newArray.splice(i, 1);
-      localStorage.setItem('Tasks', JSON.stringify(newArray));
+function removetask(i) {
+  const newArray = JSON.parse(localStorage.getItem('Tasks'));
+  newArray.splice(i, 1);
+  localStorage.setItem('Tasks', JSON.stringify(newArray));
       location.reload(); // eslint-disable-line
-    });
-  });
+
 }
 function savelocal(text, i) {
   const newArray = JSON.parse(localStorage.getItem('Tasks'));
   newArray[i].description = text;
   localStorage.setItem('Tasks', JSON.stringify(newArray));
+  location.reload();  // eslint-disable-line
 }
 
 function editTask() {
-  const removeiconId = document.querySelectorAll('#remove');
-  const doticon = document.querySelectorAll('#tasks-icon');
+  const removeiconId = document.querySelectorAll('#removeid');
+  const doticon = document.querySelectorAll('#dotid');
   const textareaInput = document.querySelectorAll('.tasks-text');
   const taskdiv = document.querySelectorAll('.tasks');
-
   taskdiv.forEach((el, i) => {
-    el.addEventListener('dblclick', (e) => {
-      e.target.disabled = false;
-      doticon[i].style.display = 'none';
-      removeiconId[i].style.display = 'block';
-      removetask(removeiconId);
-      el.addEventListener('dblclick', (e) => {
-        e.target.disabled = true;
-        doticon[i].style.display = 'block';
-        removeiconId[i].style.display = 'none';
-        editTask();
+    el.addEventListener('click', () => {
+      doticon[i].classList.toggle('changedoticon');
+      removeiconId[i].classList.toggle('changeremoveicon');
+      el.addEventListener('dblclick', () => {
         savelocal(textareaInput[i].value, i);
+      });
+
+      removeiconId[i].addEventListener('click', () => {
+        removetask(i);
       });
     });
   });
@@ -57,7 +52,7 @@ function displayList() {
   } else {
     userArray.forEach((user, i) => {
       section += `
-          <div class="tasks"><input type="checkbox" name="first" value="first"><textarea disabled class="tasks-text" for="first" id="${i}">${user.description}</textarea><span><i id="tasks-icon" class="fa fa-ellipsis-v" aria-hidden="true"></i><i id='remove' class="fa fa-trash-o" aria-hidden="true"></i></span></div>`;
+          <div class="tasks"><input type="checkbox" name="first" value="first"><textarea class="tasks-text" for="first" id="${i}">${user.description}</textarea><span><i  id='dotid' class="fa fa-ellipsis-v tasks-icon" aria-hidden="true"></i><i id='removeid' attribute= '${i}'  class="fa fa-trash-o remove" aria-hidden="true"></i></span></div>`;
       user.index = i;
       localStorage.setItem('Tasks', JSON.stringify(userArray));
     });

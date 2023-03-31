@@ -102,7 +102,7 @@ html {
   font-size: 17px;
 }
 
-#tasks-icon {
+.tasks-icon {
   display: flex;
   cursor: move;
 }
@@ -124,8 +124,16 @@ html {
   cursor: pointer;
 }
 
-#remove {
+.remove {
   display: none;
   color: red;
   cursor: pointer;
+}
+
+.changedoticon {
+  display: none;
+}
+
+.changeremoveicon {
+  display: block;
 }
