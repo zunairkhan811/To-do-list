@@ -124,6 +124,11 @@ html {
   cursor: pointer;
 }
 
+.btn:hover {
+  text-decoration: underline;
+  color: #ff6b00;
+}
+
 .remove {
   display: none;
   color: red;
@@ -136,4 +141,8 @@ html {
 
 .changeremoveicon {
   display: block;
+}
+
+.changetext {
+  text-decoration: line-through;
 }

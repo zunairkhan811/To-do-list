@@ -1,4 +1,6 @@
 import './styles.css';
+import clearbutton from '../modules/clearbutton.js';
+import interactive from '../modules/interative.js';
 
 const taskInputBtn = document.querySelector('#taskInputbtn');
 const taskList = document.querySelector('#task-list');
@@ -52,12 +54,14 @@ function displayList() {
   } else {
     userArray.forEach((user, i) => {
       section += `
-          <div class="tasks"><input type="checkbox" name="first" value="first"><textarea class="tasks-text" for="first" id="${i}">${user.description}</textarea><span><i  id='dotid' class="fa fa-ellipsis-v tasks-icon" aria-hidden="true"></i><i id='removeid' attribute= '${i}'  class="fa fa-trash-o remove" aria-hidden="true"></i></span></div>`;
+          <div class="tasks"><input id='check-box' type="checkbox" name="first" value="first"><textarea class="tasks-text" for="first" id="${i}">${user.description}</textarea><span><i  id='dotid' class="fa fa-ellipsis-v tasks-icon" aria-hidden="true"></i><i id='removeid' attribute= '${i}'  class="fa fa-trash-o remove" aria-hidden="true"></i></span></div>`;
       user.index = i;
       localStorage.setItem('Tasks', JSON.stringify(userArray));
     });
     taskList.innerHTML = section;
     editTask();
+    interactive();
+    clearbutton();
   }
 }
 
@@ -74,7 +78,7 @@ taskInput.addEventListener('keypress', (e) => {
 });
 taskInputBtn.addEventListener('click', () => {
   const taskInputValue = taskInput.value;
-  if (taskInputValue.trim() !== 0) {
+  if (taskInputValue) {
     userArray.push({ description: taskInputValue, completed: false, index: 1 });
     storeData(userArray);
     taskInput.value = '';
