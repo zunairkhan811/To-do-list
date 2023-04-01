@@ -1,4 +1,6 @@
 import './styles.css';
+import clearbutton from '../modules/clearbutton.js'
+import interactive from '../modules/interative.js'
 
 const taskInputBtn = document.querySelector('#taskInputbtn');
 const taskList = document.querySelector('#task-list');
@@ -42,14 +44,6 @@ function editTask() {
     });
   });
 }
-
-
-
-
-
-
-
-
 
 function displayList() {
   let section = '';

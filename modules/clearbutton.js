@@ -1,4 +1,4 @@
-function clearbutton(){
+export default function clearbutton(){
     const clearbtn = document.querySelector('.btn-div');
     clearbtn.addEventListener('click',()=>{
         const newArray = JSON.parse(localStorage.getItem('Tasks'));

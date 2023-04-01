@@ -1,4 +1,6 @@
-function interactive(){
+import statusCompleted from '../modules/statuscompleted.js'
+import statusNotCompleted from '../modules/statusnotcompleted.js'
+export default function interactive(){
     const checkbox = document.querySelectorAll('#check-box');
     const textareaInput = document.querySelectorAll('.tasks-text');
     checkbox.forEach((el,i)=>{
