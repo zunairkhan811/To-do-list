@@ -124,7 +124,7 @@ html {
   cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
   text-decoration: underline;
   color: #ff6b00;
 }
@@ -143,6 +143,6 @@ html {
   display: block;
 }
 
-.changetext{
+.changetext {
   text-decoration: line-through;
 }

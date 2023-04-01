@@ -1,6 +1,6 @@
 import './styles.css';
-import clearbutton from '../modules/clearbutton.js'
-import interactive from '../modules/interative.js'
+import clearbutton from '../modules/clearbutton.js';
+import interactive from '../modules/interative.js';
 
 const taskInputBtn = document.querySelector('#taskInputbtn');
 const taskList = document.querySelector('#task-list');
@@ -61,7 +61,7 @@ function displayList() {
     taskList.innerHTML = section;
     editTask();
     interactive();
-    clearbutton()
+    clearbutton();
   }
 }
 
@@ -82,8 +82,7 @@ taskInputBtn.addEventListener('click', () => {
     userArray.push({ description: taskInputValue, completed: false, index: 1 });
     storeData(userArray);
     taskInput.value = '';
-  } 
-  else {
+  } else {
     alert('Please write some task and then enter'); // eslint-disable-line
   }
 });
