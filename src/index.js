@@ -43,18 +43,8 @@ function editTask() {
   });
 }
 
-function statusCompleted(i){
-  const newArray = JSON.parse(localStorage.getItem('Tasks'));
-  newArray[i].completed = true;
-  localStorage.setItem('Tasks', JSON.stringify(newArray));
 
-}
-function statusNotCompleted(i){
-  const newArray = JSON.parse(localStorage.getItem('Tasks'));
-  newArray[i].completed = false;
-  localStorage.setItem('Tasks', JSON.stringify(newArray));
 
-}
 
 
 
