@@ -8,7 +8,6 @@ export default function clearbutton() {
       el.index = i;
     });
     localStorage.setItem('Tasks', JSON.stringify(filterArray));
-        location.reload(); // eslint-disable-line
-
+    window.location.reload();
   });
 }

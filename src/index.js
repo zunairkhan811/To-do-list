@@ -15,14 +15,13 @@ function removetask(i) {
   const newArray = JSON.parse(localStorage.getItem('Tasks'));
   newArray.splice(i, 1);
   localStorage.setItem('Tasks', JSON.stringify(newArray));
-      location.reload(); // eslint-disable-line
-
+  window.location.reload();
 }
 function savelocal(text, i) {
   const newArray = JSON.parse(localStorage.getItem('Tasks'));
   newArray[i].description = text;
   localStorage.setItem('Tasks', JSON.stringify(newArray));
-  location.reload();  // eslint-disable-line
+  window.location.reload();
 }
 
 function editTask() {
@@ -54,7 +53,7 @@ function displayList() {
   } else {
     userArray.forEach((user, i) => {
       section += `
-          <div class="tasks"><input id='check-box' type="checkbox" name="first" value="first"><textarea class="tasks-text" for="first" id="${i}">${user.description}</textarea><span><i  id='dotid' class="fa fa-ellipsis-v tasks-icon" aria-hidden="true"></i><i id='removeid' attribute= '${i}'  class="fa fa-trash-o remove" aria-hidden="true"></i></span></div>`;
+          <div class="tasks" draggable='true'><input id='check-box' type="checkbox" name="first" value="first"><textarea class="tasks-text" for="first" id="${i}">${user.description}</textarea><i  id='dotid' class="fa fa-ellipsis-v tasks-icon" aria-hidden="true"></i><i id='removeid' attribute= '${i}'  class="fa fa-trash-o remove" aria-hidden="true"></i></div>`;
       user.index = i;
       localStorage.setItem('Tasks', JSON.stringify(userArray));
     });

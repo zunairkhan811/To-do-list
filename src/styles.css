@@ -83,6 +83,7 @@ html {
   display: flex;
   padding: 6px;
   border-bottom: 2px solid gainsboro;
+  cursor: pointer;
 }
 
 .tasks-text {
@@ -100,6 +101,7 @@ html {
   height: 22px;
   font-weight: 400;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .tasks-icon {
