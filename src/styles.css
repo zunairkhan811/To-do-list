@@ -79,35 +79,6 @@ html {
   margin: 4px;
 }
 
-.tasks {
-  display: flex;
-  padding: 6px;
-  border-bottom: 2px solid gainsboro;
-  cursor: pointer;
-}
-
-.tasks-text {
-  width: 95%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 9px;
-  border: none;
-  outline: none;
-  resize: none;
-  font-family: 'Inter', sans-serif;
-  background-color: transparent;
-  color: black;
-  height: 22px;
-  font-weight: 400;
-  font-size: 17px;
-  cursor: pointer;
-}
-
-.tasks-icon {
-  display: flex;
-  cursor: move;
-}
 
 .btn-div {
   display: flex;
@@ -129,22 +100,4 @@ html {
 .btn:hover {
   text-decoration: underline;
   color: #ff6b00;
-}
-
-.remove {
-  display: none;
-  color: red;
-  cursor: pointer;
-}
-
-.changedoticon {
-  display: none;
-}
-
-.changeremoveicon {
-  display: block;
-}
-
-.changetext {
-  text-decoration: line-through;
 }
