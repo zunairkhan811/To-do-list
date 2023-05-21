@@ -1,11 +1,7 @@
 import displayTodo from "./displayTodo";
 const getLocal = ()=>{
-    let objStr = localStorage.getItem('Todos');
-    if(objStr!==null){
-      let arr = JSON.parse(objStr);
-      console.log(arr);
-      displayTodo(arr);
-    }
+    let objStr = JSON.parse(localStorage.getItem('Todos'));
+      displayTodo(objStr);
 }
 
 export default getLocal;
