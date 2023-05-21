@@ -22,9 +22,8 @@ entericon.addEventListener('click',()=>{
     return;
   }
   else{
-    arr.push({id:uuidv4(),completed:true,title:input.value});
+    arr.push({id:uuidv4(),completed:false,title:input.value});
     setLocal(arr);
-    displayTodo(arr);
     input.value = '';
   }
   

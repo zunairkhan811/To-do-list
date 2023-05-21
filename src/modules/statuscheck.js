@@ -1,18 +1,23 @@
-const checkstatus = ()=>{
+import setLocal from "./setLocal";
+const fiterArray = (arr,id)=>{
+ let newarr = [];
+ arr.forEach((item)=>{
+  if(item.id === id){
+    item.completed = !item.completed;
+  }
+  newarr.push(item)
+ })
+ setLocal(newarr);
+}
+
+const checkstatus = (arr)=>{
   const checkbox = document.querySelectorAll('.task-item input');
   checkbox.forEach((item)=>{
     item.addEventListener('click',(e)=>{
-      if(e.target.checked === true){
-        item.nextElementSibling.style.fontStyle = 'italic';
-        item.nextElementSibling.style.opacity = 0.4;
-        item.nextElementSibling.style.textDecoration = 'line-through';
-      }else{
-        item.nextElementSibling.style.fontStyle = 'normal';
-        item.nextElementSibling.style.opacity = 1;
-        item.nextElementSibling.style.textDecoration = 'none';
-      }
+      fiterArray(arr,e.target.parentElement.id)
     })
   })
 }
+
 
 export default checkstatus;

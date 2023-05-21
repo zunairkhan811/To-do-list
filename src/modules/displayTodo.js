@@ -1,8 +1,9 @@
 import increaseHeight from "./increaseTextArea";
 import checkstatus from "./statuscheck";
+import applyCheck from "./applyStatusCheck";
 const displayTodo = (arr)=>{
     const taskList = document.querySelector('#task-list');
-    console.log(taskList);
+    // console.log(taskList);
     taskList.innerHTML = '';
     if(arr!==null){
         arr.map((item)=>{
@@ -19,7 +20,8 @@ const displayTodo = (arr)=>{
     }
     
     increaseHeight(); 
-    checkstatus();
+    checkstatus(arr);
+    applyCheck();
 }
 
 export default displayTodo;
