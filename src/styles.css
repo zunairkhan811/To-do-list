@@ -79,6 +79,15 @@ html {
   margin: 4px;
 }
 
+.task-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid brown;
+  padding: 9px;
+  margin: 4px;
+}
+
 
 .btn-div {
   display: flex;
