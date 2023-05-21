@@ -49,6 +49,7 @@ html {
   font-size: 19px;
   padding: 5px;
   cursor: pointer;
+  transition: all 1s;
 }
 
 #add-task-div {
@@ -76,17 +77,14 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 4px;
-  margin: 4px;
 }
 
 .task-item{
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid brown;
+  border-top: 1px solid gainsboro;
   padding: 9px;
-  margin: 4px;
 }
 .task-item:focus-within{
   background-color: #f9efa2;
@@ -94,6 +92,10 @@ html {
 
 .task-item input {
   margin-right: 9px;
+}
+
+.task-item:last-child{
+  border-bottom: 1px solid gainsboro ;
 }
 
 #textarea{
@@ -107,6 +109,14 @@ html {
   background:none;
   border: none;
   outline: none;
+}
+
+.dot-icon{
+  cursor: move;
+}
+
+.trash-icon{
+  display: none;
 }
 
 

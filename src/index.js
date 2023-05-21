@@ -5,10 +5,15 @@ import getLocal from './modules/getLocal';
 import displayTodo from './modules/displayTodo';
 const input = document.querySelector('#add-task-div input');
 const entericon = document.querySelector('.add-task-icon i');
+const refreshicon = document.querySelector('.list-heading-icon i');
 let arr = localStorage.getItem('Todos')? JSON.parse(localStorage.getItem('Todos')): [];
-let newarr = [];
 
 getLocal();
+
+refreshicon.addEventListener('click',()=>{
+  refreshicon.style.transform = 'rotate(550deg)'
+  window.location.reload();
+})
 
 entericon.addEventListener('click',()=>{
   console.log(input.value);
@@ -18,11 +23,9 @@ entericon.addEventListener('click',()=>{
   }
   else{
     arr.push({id:uuidv4(),completed:true,title:input.value});
-    newarr.push({id:uuidv4(),completed:true,title:input.value})
     setLocal(arr);
-    displayTodo(newarr);
+    displayTodo(arr);
     input.value = '';
-    newarr = [];
   }
   
 })
