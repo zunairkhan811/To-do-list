@@ -1,5 +1,5 @@
 const increaseHeight =()=>{
-    const textarea = document.querySelectorAll('#title');
+    const textarea = document.querySelectorAll('#textarea');
     textarea.forEach((item)=>{
         item.addEventListener('keyup', ()=>{
             item.style.height = '5px';

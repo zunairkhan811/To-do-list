@@ -59,6 +59,7 @@ html {
 }
 
 #add-task-div input {
+  font-style: italic;
   width: 95%;
   padding: 8px;
   font-size: 20px;
@@ -87,18 +88,27 @@ html {
   padding: 9px;
   margin: 4px;
 }
+.task-item:focus-within{
+  background-color: #f9efa2;
+}
 
 .task-item input {
   margin-right: 9px;
 }
 
-#title{
+#textarea{
+  font-family: 'Inter', sans-serif;
   width: 90%;
   resize: none;
   overflow: hidden;
   line-height: 1.5;
   padding: 4px 5px;
+  font-size: 15px;
+  background:none;
+  border: none;
+  outline: none;
 }
+
 
 
 .btn-div {
