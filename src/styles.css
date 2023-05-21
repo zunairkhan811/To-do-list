@@ -88,6 +88,14 @@ html {
   margin: 4px;
 }
 
+#title{
+  width: 90%;
+  resize: none;
+  overflow: hidden;
+  line-height: 1.5;
+  padding: 4px 5px;
+}
+
 
 .btn-div {
   display: flex;
