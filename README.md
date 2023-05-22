@@ -27,7 +27,7 @@
 
 
 
-**[Add-Books-javascript-Project]** is a project of creating a to do list structure and Adding and Removing Tasks from list using javascript and the use of webpack for distribution of files to showcase my skills to  employers.
+**[To-do-List]** is a project of creating a to do list structure and Adding and Removing Tasks from list using javascript and the use of webpack for distribution of files to showcase my skills to  employers.
 
 ## 🛠 Built With <a name="built-with"></a>
 

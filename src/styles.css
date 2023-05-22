@@ -49,6 +49,7 @@ html {
   font-size: 19px;
   padding: 5px;
   cursor: pointer;
+  transition: all 1s;
 }
 
 #add-task-div {
@@ -58,7 +59,12 @@ html {
   margin: 4px;
 }
 
+.task-item input {
+  margin-right: 9px;
+}
+
 #add-task-div input {
+  font-style: italic;
   width: 95%;
   padding: 8px;
   font-size: 20px;
@@ -75,38 +81,44 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 4px;
-  margin: 4px;
 }
 
-.tasks {
-  display: flex;
-  padding: 6px;
-  border-bottom: 2px solid gainsboro;
-  cursor: pointer;
-}
-
-.tasks-text {
-  width: 95%;
+.task-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 9px;
+  border-top: 1px solid gainsboro;
+  padding: 9px;
+}
+
+.task-item:last-child {
+  border-bottom: 1px solid gainsboro;
+}
+
+#textarea {
+  font-family: 'Inter', sans-serif;
+  width: 90%;
+  resize: none;
+  overflow: hidden;
+  padding: 4px 5px;
+  font-size: 15px;
+  background: none;
   border: none;
   outline: none;
-  resize: none;
-  font-family: 'Inter', sans-serif;
-  background-color: transparent;
-  color: black;
-  height: 22px;
-  font-weight: 400;
-  font-size: 17px;
+}
+
+.dot-icon {
+  cursor: move;
+}
+
+.trash-icon {
+  display: none;
+  color: red;
   cursor: pointer;
 }
 
-.tasks-icon {
-  display: flex;
-  cursor: move;
+.task-item:focus-within {
+  background-color: #f9efa2;
 }
 
 .btn-div {
@@ -129,22 +141,4 @@ html {
 .btn:hover {
   text-decoration: underline;
   color: #ff6b00;
-}
-
-.remove {
-  display: none;
-  color: red;
-  cursor: pointer;
-}
-
-.changedoticon {
-  display: none;
-}
-
-.changeremoveicon {
-  display: block;
-}
-
-.changetext {
-  text-decoration: line-through;
 }
