@@ -10,9 +10,7 @@ const editedArray = (arr,text,id)=>{
     setLocal(arr);
 }
 const editTodos = (arr)=>{
-    const mainbox = document.querySelector('#main-box');
     const textarea = document.querySelectorAll('#textarea');
-    let previousTextarea = null;
     textarea.forEach((item)=>{
         item.addEventListener('dblclick',(e)=>{
             let editText = e.target.value;

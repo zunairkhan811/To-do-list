@@ -2,7 +2,6 @@ import './styles.css';
 import { v4 as uuidv4 } from 'uuid';
 import setLocal from './modules/setLocal';
 import getLocal from './modules/getLocal';
-import displayTodo from './modules/displayTodo';
 
 const input = document.querySelector('#add-task-div input');
 const entericon = document.querySelector('.add-task-icon i');

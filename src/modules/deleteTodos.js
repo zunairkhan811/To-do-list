@@ -3,6 +3,7 @@ import setLocal from './setLocal';
 const deleteArray = (arr, id) => {
   const newarr = arr.filter((item) => item.id !== id);
   setLocal(newarr);
+  window.location.reload();
 };
 
 const deleteTodos = (arr) => {
