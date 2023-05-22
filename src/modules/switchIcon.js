@@ -30,18 +30,6 @@ const switchIcons = () => {
       });
     });
   });
-
-  // pageContainer.addEventListener('click', function() {
-  //     if (previousTextarea !== null) {
-  //       // Remove icon style from previously clicked textarea
-  //          var previousIcon = previousTextarea.nextElementSibling;
-  //           var previousIconnext = previousTextarea.nextElementSibling.nextElementSibling;
-  //           previousIcon.style.display = 'block';
-  //           previousIconnext.style.display = 'none';
-
-  //       previousTextarea = null; // Reset the previously clicked textarea
-  //     }
-  // });
 };
 
 export default switchIcons;
