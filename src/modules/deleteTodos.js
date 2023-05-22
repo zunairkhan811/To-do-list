@@ -1,4 +1,4 @@
-import setLocal from './setLocal';
+import setLocal from './setLocal.js';
 
 const deleteArray = (arr, id) => {
   const newarr = arr.filter((item) => item.id !== id);

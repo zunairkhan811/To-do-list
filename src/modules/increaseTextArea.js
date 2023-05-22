@@ -3,7 +3,7 @@ const increaseHeight = () => {
   textarea.forEach((item) => {
     item.addEventListener('keyup', () => {
       item.style.height = '2px';
-      item.style.height = (item.scrollHeight) + 'px';
+      item.style.height = `${item.scrollHeight}px`;
     });
   });
 };

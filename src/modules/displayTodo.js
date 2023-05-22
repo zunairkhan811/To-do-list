@@ -1,25 +1,22 @@
-import increaseHeight from './increaseTextArea';
-import checkstatus from './statuscheck';
-import applyCheck from './applyStatusCheck';
-import deleteTodos from './deleteTodos';
-import switchIcons from './switchIcon';
-import editTodos from './editTodos';
-import clearAllCompleted from './clearAll';
+import increaseHeight from './increaseTextArea.js';
+import checkstatus from './statuscheck.js';
+import applyCheck from './applyStatusCheck.js';
+import deleteTodos from './deleteTodos.js';
+import switchIcons from './switchIcon.js';
+import editTodos from './editTodos.js';
+import clearAllCompleted from './clearAll.js';
 
 const displayTodo = (arr) => {
   const taskList = document.querySelector('#task-list');
   taskList.innerHTML = '';
-  if(arr.length === 0){
+  if (arr === null || arr.length === 0) {
     taskList.innerHTML = `
             <div class="task-item">
-                
                 <textarea name="textarea" id="textarea" rows='1' cols="30" >No Tasks Added Yet
-                </textarea>
-                
+                </textarea> 
             </div>
             `;
-            
-            return;
+    return;
   }
   if (arr !== null) {
     arr.map((item) => {
@@ -32,6 +29,7 @@ const displayTodo = (arr) => {
                 <i class="fa fa-trash-o trash-icon"></i>
             </div>
             `;
+      return taskList;
     });
   }
 

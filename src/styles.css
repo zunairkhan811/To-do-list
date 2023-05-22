@@ -59,6 +59,10 @@ html {
   margin: 4px;
 }
 
+.task-item input {
+  margin-right: 9px;
+}
+
 #add-task-div input {
   font-style: italic;
   width: 95%;
@@ -85,10 +89,6 @@ html {
   align-items: center;
   border-top: 1px solid gainsboro;
   padding: 9px;
-}
-
-.task-item input {
-  margin-right: 9px;
 }
 
 .task-item:last-child {

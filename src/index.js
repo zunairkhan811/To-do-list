@@ -1,7 +1,7 @@
 import './styles.css';
 import { v4 as uuidv4 } from 'uuid';
-import setLocal from './modules/setLocal';
-import getLocal from './modules/getLocal';
+import setLocal from './modules/setLocal.js';
+import getLocal from './modules/getLocal.js';
 
 const input = document.querySelector('#add-task-div input');
 const entericon = document.querySelector('.add-task-icon i');
@@ -16,9 +16,8 @@ refreshicon.addEventListener('click', () => {
 });
 
 entericon.addEventListener('click', () => {
-  console.log(input.value);
   if (input.value === '') {
-    console.log('please write something');
+    throw new Error('Input value is empty');
   } else {
     arr.push({ id: uuidv4(), completed: false, title: input.value });
     setLocal(arr);

@@ -1,4 +1,4 @@
-import setLocal from './setLocal';
+import setLocal from './setLocal.js';
 
 const fiterArray = (arr, id) => {
   const newarr = [];

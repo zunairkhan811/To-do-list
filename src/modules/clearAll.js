@@ -1,17 +1,14 @@
-import setLocal from "./setLocal";
-const clearAllCompleted = (arr)=>{
-    // const arr = JSON.parse(localStorage.getItem('Todos'))
-    const clearbtn = document.querySelector('.btn-div')
-    let newarr = arr.filter((item)=>!item.completed);
-    clearbtn.addEventListener('click',()=>{
-        if(newarr.length === arr.length){
-            return;
-        }else{
-            setLocal(newarr);
-            window.location.reload();
-        }
-        
-    })
-}
+import setLocal from './setLocal.js';
+
+const clearAllCompleted = (arr) => {
+  const clearbtn = document.querySelector('.btn-div');
+  clearbtn.addEventListener('click', () => {
+    const newarr = arr.filter((item) => item.completed !== true);
+    if (newarr.length !== arr.length && arr !== null) {
+      setLocal(newarr);
+      window.location.reload();
+    }
+  });
+};
 
 export default clearAllCompleted;

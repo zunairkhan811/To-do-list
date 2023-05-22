@@ -1,4 +1,4 @@
-import displayTodo from './displayTodo';
+import displayTodo from './displayTodo.js';
 // import clearAllCompleted from './clearAll';
 
 const getLocal = () => {
