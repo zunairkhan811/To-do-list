@@ -79,26 +79,23 @@ html {
   justify-content: space-between;
 }
 
-.task-item{
+.task-item {
   display: flex;
   justify-content: center;
   align-items: center;
   border-top: 1px solid gainsboro;
   padding: 9px;
 }
-.task-item:focus-within{
-  background-color: #f9efa2;
-}
 
 .task-item input {
   margin-right: 9px;
 }
 
-.task-item:last-child{
-  border-bottom: 1px solid gainsboro ;
+.task-item:last-child {
+  border-bottom: 1px solid gainsboro;
 }
 
-#textarea{
+#textarea {
   font-family: 'Inter', sans-serif;
   width: 90%;
   resize: none;
@@ -106,20 +103,24 @@ html {
   line-height: 1.5;
   padding: 4px 5px;
   font-size: 15px;
-  background:none;
+  background: none;
   border: none;
   outline: none;
 }
 
-.dot-icon{
+.dot-icon {
   cursor: move;
 }
 
-.trash-icon{
+.trash-icon {
   display: none;
+  color: red;
+  cursor: pointer;
 }
 
-
+.task-item:focus-within {
+  background-color: #f9efa2;
+}
 
 .btn-div {
   display: flex;
