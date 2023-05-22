@@ -3,6 +3,7 @@ import checkstatus from './statuscheck';
 import applyCheck from './applyStatusCheck';
 import deleteTodos from './deleteTodos';
 import switchIcons from './switchIcon';
+import editTodos from './editTodos';
 
 const displayTodo = (arr) => {
   const taskList = document.querySelector('#task-list');
@@ -26,6 +27,7 @@ const displayTodo = (arr) => {
   applyCheck();
   deleteTodos(arr);
   switchIcons();
+  editTodos(arr);
 };
 
 export default displayTodo;
