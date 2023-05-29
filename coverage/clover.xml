@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1685390114603" clover="3.2.0">
-  <project timestamp="1685390114603" name="All files">
-    <metrics statements="104" coveredstatements="66" conditionals="20" coveredconditionals="15" methods="32" coveredmethods="19" elements="156" coveredelements="100" complexity="0" loc="104" ncloc="104" packages="1" files="10" classes="10"/>
+<coverage generated="1685390803014" clover="3.2.0">
+  <project timestamp="1685390803014" name="All files">
+    <metrics statements="104" coveredstatements="71" conditionals="20" coveredconditionals="15" methods="32" coveredmethods="22" elements="156" coveredelements="108" complexity="0" loc="104" ncloc="104" packages="1" files="10" classes="10"/>
     <file name="applyStatusCheck.js" path="C:\Users\user\Desktop\git-files\To-do-list\src\modules\applyStatusCheck.js">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <line num="1" count="5" type="stmt"/>
@@ -81,13 +81,13 @@
       <line num="5" count="2" type="stmt"/>
     </file>
     <file name="increaseTextArea.js" path="C:\Users\user\Desktop\git-files\To-do-list\src\modules\increaseTextArea.js">
-      <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <line num="1" count="4" type="stmt"/>
-      <line num="2" count="0" type="stmt"/>
-      <line num="3" count="0" type="stmt"/>
-      <line num="4" count="0" type="stmt"/>
-      <line num="5" count="0" type="stmt"/>
-      <line num="6" count="0" type="stmt"/>
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <line num="1" count="5" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
     </file>
     <file name="setLocal.js" path="C:\Users\user\Desktop\git-files\To-do-list\src\modules\setLocal.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
