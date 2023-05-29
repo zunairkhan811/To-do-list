@@ -1,3 +1,11 @@
+<a name="readme-top"></a>
+
+<div align="center">
+
+  <h3><b>**Todo List Project**</b></h3>
+  <img src="./src/images/todoscreenshot.png" alt="Todo List image"/>
+
+</div>
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -105,7 +113,7 @@ Example commands:
 Install this project with:
 
 
---> Visual Studio Code
+--> Write "npm i" in Visual Studio Code Terminal
 
 
 ### Usage
@@ -113,12 +121,14 @@ Install this project with:
 To run the project, execute the following command:
 
 
---> Click on live Link or Click on live server in Vs Studio.
+--> Write npm start in Visual Studio Terminal
 
 
 ### Run tests
 
 To run tests, run the following command:
+
+--> npm run test
 
 <!--
 In order to run for linter errors, you will have to create a pull request
@@ -128,6 +138,9 @@ In order to run for linter errors, you will have to create a pull request
 
 You can deploy this project using:
 
+--> [npm run deploy] command on github pages 
+
+OR
 
 --> By purchasing domain and hosting
 
