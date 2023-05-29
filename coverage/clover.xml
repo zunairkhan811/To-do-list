@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1685392088579" clover="3.2.0">
-  <project timestamp="1685392088579" name="All files">
+<coverage generated="1685393887382" clover="3.2.0">
+  <project timestamp="1685393887382" name="All files">
     <metrics statements="104" coveredstatements="82" conditionals="20" coveredconditionals="17" methods="32" coveredmethods="27" elements="156" coveredelements="126" complexity="0" loc="104" ncloc="104" packages="1" files="10" classes="10"/>
     <file name="applyStatusCheck.js" path="C:\Users\user\Desktop\git-files\To-do-list\src\modules\applyStatusCheck.js">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
