@@ -13,7 +13,6 @@ jest.mock('../modules/getLocal.js');
 
 describe('editTodos', () => {
   beforeEach(() => {
-    
     setLocal.mockClear();
     getLocal.mockClear();
     setLocal.mockImplementation(() => {});
@@ -21,7 +20,6 @@ describe('editTodos', () => {
   });
 
   test('adds event listeners and calls the necessary functions when textarea is double-clicked', () => {
-   
     const todos = [
       { id: 1, title: 'Task 1', completed: false },
       { id: 2, title: 'Task 2', completed: true },

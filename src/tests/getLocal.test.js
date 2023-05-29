@@ -33,7 +33,6 @@ describe('getLocal', () => {
   });
 
   test('retrieves the local storage and calls displayTodo with the parsed array', () => {
-  
     const todos = [
       { id: 1, title: 'Task 1', completed: false },
       { id: 2, title: 'Task 2', completed: true },
@@ -47,7 +46,6 @@ describe('getLocal', () => {
   });
 
   test('calls displayTodo with null when local storage does not contain Todos', () => {
-   
     localStorage.removeItem('Todos');
 
     getLocal();

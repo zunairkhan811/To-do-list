@@ -9,7 +9,6 @@ global.document.querySelectorAll = mockQuerySelectorAll;
 
 describe('increaseHeight', () => {
   test('increases the height of textarea based on content', () => {
-    
     const textarea = {
       addEventListener: jest.fn(),
       style: { height: '' },

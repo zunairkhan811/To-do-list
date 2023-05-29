@@ -20,7 +20,6 @@ describe('deleteTodos', () => {
   });
 
   test('adds event listeners and calls the necessary functions when trash icon is clicked', () => {
-
     const todos = [
       { id: 1, title: 'Task 1', completed: false },
       { id: 2, title: 'Task 2', completed: true },

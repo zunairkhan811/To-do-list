@@ -51,7 +51,6 @@ describe('displayTodo', () => {
   });
 
   test('calls the necessary dependency functions', () => {
-  
     const tasks = [
       { id: 1, title: 'Task 1', completed: false },
     ];
