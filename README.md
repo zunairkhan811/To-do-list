@@ -37,6 +37,8 @@
 
 **[To-do-List]** is a project of creating a to do list structure and Adding and Removing Tasks from list using javascript and the use of webpack for distribution of files to showcase my skills to  employers.
 
+- [Video Link about Project] <a href="https://www.loom.com/share/4f5f846e14594ce0871d879e6dc5db4c"><button type="button" color:red background: white>Click Here</button></a>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
