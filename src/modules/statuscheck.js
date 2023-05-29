@@ -1,4 +1,5 @@
 import setLocal from './setLocal.js';
+import getLocal from './getLocal.js';
 
 const fiterArray = (arr, id) => {
   const newarr = [];
@@ -9,6 +10,7 @@ const fiterArray = (arr, id) => {
     newarr.push(item);
   });
   setLocal(newarr);
+  getLocal();
 };
 
 const checkstatus = (arr) => {

@@ -6,7 +6,6 @@ import getLocal from './modules/getLocal.js';
 const input = document.querySelector('#add-task-div input');
 const entericon = document.querySelector('.add-task-icon i');
 const refreshicon = document.querySelector('.list-heading-icon i');
-const arr = localStorage.getItem('Todos') ? JSON.parse(localStorage.getItem('Todos')) : [];
 
 getLocal();
 
@@ -19,8 +18,10 @@ entericon.addEventListener('click', () => {
   if (input.value === '') {
     throw new Error('Input value is empty');
   } else {
+    const arr = localStorage.getItem('Todos') ? JSON.parse(localStorage.getItem('Todos')) : [];
     arr.push({ id: uuidv4(), completed: false, title: input.value });
     setLocal(arr);
+    getLocal();
     input.value = '';
   }
 });

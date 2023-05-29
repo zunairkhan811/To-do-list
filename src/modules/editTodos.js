@@ -1,4 +1,5 @@
 import setLocal from './setLocal.js';
+import getLocal from './getLocal.js';
 
 const editedArray = (arr, text, id) => {
   arr.forEach((item) => {
@@ -9,6 +10,7 @@ const editedArray = (arr, text, id) => {
   });
 
   setLocal(arr);
+  getLocal();
 };
 const editTodos = (arr) => {
   const textarea = document.querySelectorAll('#textarea');
