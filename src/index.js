@@ -16,7 +16,7 @@ refreshicon.addEventListener('click', () => {
 
 entericon.addEventListener('click', () => {
   if (input.value === '') {
-    throw new Error('Input value is empty');
+    console.log('Please enter any task in input field');
   } else {
     const arr = localStorage.getItem('Todos') ? JSON.parse(localStorage.getItem('Todos')) : [];
     arr.push({ id: uuidv4(), completed: false, title: input.value });

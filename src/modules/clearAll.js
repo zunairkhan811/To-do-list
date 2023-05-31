@@ -8,6 +8,7 @@ const clearAllCompleted = (arr) => {
     if (newarr.length !== arr.length && arr !== null) {
       setLocal(newarr);
       getLocal();
+      arr = [];
     }
   });
 };
