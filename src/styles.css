@@ -20,125 +20,155 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
-#noteheading {
-  width: 480px;
-  margin: auto;
-  border: 2px solid brown;
+@media screen and (min-width: 280px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+  }
+
+  #noteheading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 2px solid brown;
+  }
+
+  #main-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid brown;
+  }
+
+  #list-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    margin: 4px;
+    border: 2px solid goldenrod;
+  }
+
+  #list-heading h1 {
+    font-size: 30px;
+  }
+
+  .list-heading-icon i {
+    font-size: 19px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  #add-task-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    margin: 4px;
+  }
+
+  .task-item input {
+    margin-right: 9px;
+  }
+
+  #add-task-div input {
+    font-style: italic;
+    width: 95%;
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  .add-task-icon {
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 6px;
+    cursor: pointer;
+  }
+
+  #task-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .task-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid gainsboro;
+    padding: 9px;
+  }
+
+  .task-item:last-child {
+    border-bottom: 1px solid gainsboro;
+  }
+
+  #textarea {
+    font-family: 'Inter', sans-serif;
+    width: 90%;
+    resize: none;
+    overflow: hidden;
+    padding: 4px 5px;
+    font-size: 15px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .dot-icon {
+    cursor: move;
+  }
+
+  .trash-icon {
+    display: none;
+    color: red;
+    cursor: pointer;
+  }
+
+  .task-item:focus-within {
+    background-color: #f9efa2;
+  }
+
+  .btn-div {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    margin: 4px;
+    cursor: pointer;
+    border: 2px solid cadetblue;
+  }
+
+  .btn {
+    font-size: 20px;
+    border: none;
+    background: none;
+    padding: 4px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    text-decoration: underline;
+    color: #ff6b00;
+  }
 }
 
-#main-box {
-  width: 480px;
-  margin: auto;
-  margin-top: 20px;
-  border: 2px solid brown;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 60%;
+  }
 }
 
-#list-heading {
-  display: flex;
-  justify-content: space-between;
-  padding: 4px;
-  margin: 4px;
-  border: 2px solid goldenrod;
-}
-
-#list-heading h1 {
-  font-size: 30px;
-}
-
-.list-heading-icon i {
-  font-size: 19px;
-  padding: 5px;
-  cursor: pointer;
-  transition: all 1s;
-}
-
-#add-task-div {
-  display: flex;
-  justify-content: space-between;
-  padding: 4px;
-  margin: 4px;
-}
-
-.task-item input {
-  margin-right: 9px;
-}
-
-#add-task-div input {
-  font-style: italic;
-  width: 95%;
-  padding: 8px;
-  font-size: 20px;
-}
-
-.add-task-icon {
-  font-size: 14px;
-  padding: 5px;
-  margin-top: 6px;
-  cursor: pointer;
-}
-
-#task-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.task-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid gainsboro;
-  padding: 9px;
-}
-
-.task-item:last-child {
-  border-bottom: 1px solid gainsboro;
-}
-
-#textarea {
-  font-family: 'Inter', sans-serif;
-  width: 90%;
-  resize: none;
-  overflow: hidden;
-  padding: 4px 5px;
-  font-size: 15px;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-.dot-icon {
-  cursor: move;
-}
-
-.trash-icon {
-  display: none;
-  color: red;
-  cursor: pointer;
-}
-
-.task-item:focus-within {
-  background-color: #f9efa2;
-}
-
-.btn-div {
-  display: flex;
-  justify-content: center;
-  padding: 4px;
-  margin: 4px;
-  cursor: pointer;
-  border: 2px solid cadetblue;
-}
-
-.btn {
-  font-size: 20px;
-  border: none;
-  background: none;
-  padding: 4px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  text-decoration: underline;
-  color: #ff6b00;
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 40%;
+  }
 }
