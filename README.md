@@ -159,7 +159,7 @@ OR
 
 - GitHub: [@zunairkhan811](https://github.com/zunairkhan811)
 - Twitter: [@zunairkhan811](https://twitter.com/zunairkhan811)
-- LinkedIn: [zunairkhan811](https://linkedin.com/in/zunairkhan811)
+- LinkedIn: [mzunairkhan](https://linkedin.com/in/mzunairkhan)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
